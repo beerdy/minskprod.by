@@ -1,0 +1,86 @@
+/* -- Виджет --*/
+.convertor {
+  margin-top: 10px;
+}
+/* //-- Виджет --*/
+
+/* -- Head -- */
+.address-bar-head {
+  span {
+    word-wrap: normal;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .brand-head {
+    display: none;
+  }
+}
+/* //-- Head -- */
+
+.fa {
+  color: #CB842E;
+  font-weight: bold;
+}
+
+.col-centered {
+  /* -- Если убрать то картинка примит всю ширину row
+        Если оставить то картинка будет центроваться -- */
+  display: inline-block; 
+}
+
+/* -- Product -- */
+.product>div>div {
+  background-color: white;
+  margin: 10px;
+  padding: 3px;
+
+}
+.product>div {
+  background: url('/assets/border.jpg');
+  margin: 3px;
+}
+/* // -- Product -- */
+
+.paper-border {
+  padding: 6px 0 6px 0;
+  background: url('/assets/tr.png');
+}
+.paper-line {
+  background: url('/assets/border.jpg');
+  height: 1px;
+  
+}
+.paper {
+  text-align: center;
+  background: url('/assets/backfon.jpg');
+  height: 72px;
+  width: 100%;
+  
+  p, div {
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+  }
+  .paper-img {
+    float: left;
+    height: 100%;
+  }
+
+  img {
+    height: 70px;
+  }
+  .paper-txt {
+    overflow: hidden;
+    p {
+      margin-top: -3px;
+    }
+  }
+  .paper-ln {
+    background: url('/assets/by.png') repeat-x;
+    width: 95%;
+    margin-top: 3px;
+    height: 16px;
+  }
+}

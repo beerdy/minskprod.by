@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @about.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @about.description %>
+</p>
+
+<p>
+  <strong>Slave:</strong>
+  <%= @about.slave %>
+</p>
+
+<p>
+  <strong>Image uid:</strong>
+  <%= @about.image_uid %>
+</p>
+
+<p>
+  <strong>Image name:</strong>
+  <%= @about.image_name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @about.url %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @about.sort %>
+</p>
+
+<%= link_to 'Edit', edit_about_path(@about) %> |
+<%= link_to 'Back', abouts_path %>

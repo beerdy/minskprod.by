@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MinskprodBy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    body {
+      background: url('/assets/bg.jpg') repeat center center fixed;
+    }
+  </style>
+</head>
+<body>
+    
+  <!--Currency Converter widget by FreeCurrencyRates.com -->
+  <div class="convertor">
+  <div id='gcw_mainFDrW85HmL' class='gcw_mainFDrW85HmL'></div>
+  <a id='gcw_siteFDrW85HmL' href='https://freecurrencyrates.com/ru/'>FreeCurrencyRates.com</a>
+  <script>function reloadFDrW85HmL(){ var sc = document.getElementById('scFDrW85HmL');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFDrW85HmL';sc.src = 'https://freecurrencyrates.com/ru/widget-horizontal?iso=BYRXUM&df=2&p=FDrW85HmL&v=f&source=nbrb&width=220&width_title=110&firstrowvalue=1&thm=E0CFC2,F4F0EC,D49768,CB842E,FFFFFF,E0CFC2,F4F0EC,B85700,000000&title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82&tzo=-180';var div = document.getElementById('gcw_mainFDrW85HmL');div.parentNode.insertBefore(sc, div);} reloadFDrW85HmL(); </script>
+  <!-- put custom styles here: .gcw_mainFDrW85HmL{}, .gcw_headerFDrW85HmL{}, .gcw_ratesFDrW85HmL{}, .gcw_sourceFDrW85HmL{} -->
+  </div>
+  <!--End of Currency Converter widget by FreeCurrencyRates.com -->
+
+  <div class="brand">Прямые поставки продукции от производителей Беларуси</div>
+
+  <div class="address-bar">
+    <i class="fa fa-envelope" aria-hidden="true"></i> example@email.com 
+    | <i class="fa fa-phone-square" aria-hidden="true"></i> +7 904 123 23 43 | 
+    <i class="fa fa-map" aria-hidden="true"></i> Минск
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+              <a class="navbar-brand" href="index.html">+7 904 123 23 43</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a href="/">Главная</a>
+                  </li>
+                  <li>
+                      <a href="/abouts">О магазине</a>
+                  </li>
+                  <!--
+                  <li>
+                      <a href="blog.html">Blog</a>
+                  </li>
+                  -->
+                  <li>
+                      <a href="/contacts">Контакты</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+  <div class="container">
+      <div class="row brand-head">
+          <div class="box">
+              <div class="col-lg-12">
+                  <hr>
+                    <h4 class="text-center">Прямые поставки продукции от производителей Беларуси</h4>
+                  </h2>
+                  <hr>
+                  <div class="address-bar-head text-center">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> example@email.com 
+                    <span>| <i class="fa fa-phone-square" aria-hidden="true"></i> +7 904 123 23 43 | </span>
+                    <i class="fa fa-map" aria-hidden="true"></i> Минск
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <%= yield %>
+
+    </div>
+    <!-- /.container -->
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                <p>Всё законно &copy; Разработано <i class="fa fa-heart"></i> <a href="#">ОткликПавэр</a></p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  <!-- Script to Activate the Carousel -->
+  <script>
+  $('.carousel').carousel({
+      interval: 5000 //changes the speed
+  })
+  </script>
+
+</body>
+</html>
