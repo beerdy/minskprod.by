@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526152508) do
+ActiveRecord::Schema.define(version: 20170527222730) do
 
   create_table "abouts", force: :cascade do |t|
     t.string   "title"
@@ -25,7 +25,68 @@ ActiveRecord::Schema.define(version: 20170526152508) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "slave"
+    t.string   "image_uid"
+    t.string   "image_name"
+    t.string   "url"
+    t.integer  "sort"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "contacts", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "slave"
+    t.string   "image_uid"
+    t.string   "image_name"
+    t.string   "url"
+    t.integer  "sort"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "contents", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "slave"
+    t.string   "image_uid"
+    t.string   "image_name"
+    t.string   "url"
+    t.integer  "sort"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "slave"
+    t.string   "image_uid"
+    t.string   "image_name"
+    t.string   "url"
+    t.integer  "sort"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "slave"
+    t.string   "image_uid"
+    t.string   "image_name"
+    t.string   "url"
+    t.integer  "sort"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "price"
+  end
+
+  create_table "sliders", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.text     "slave"

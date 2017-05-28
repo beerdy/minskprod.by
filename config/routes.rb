@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :articles
+  resources :contents
+  resources :groups
+  resources :products
+  resources :sliders
+  resources :sliders
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :abouts
   resources :contacts
   get 'welcome/index'

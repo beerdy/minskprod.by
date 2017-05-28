@@ -41,8 +41,12 @@
   background: url('/assets/border.jpg');
   margin: 3px;
 }
+.product  {
+  margin-left: 1%;
+}
 /* // -- Product -- */
 
+/* -- Groups --*/
 .paper-border {
   padding: 6px 0 6px 0;
   background: url('/assets/tr.png');
@@ -83,4 +87,10 @@
     margin-top: 3px;
     height: 16px;
   }
+}
+/* //-- Groups --*/
+
+.centered { 
+  //border: 1px solid red;
+  float: none; margin: 0 auto;
 }
