@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  resources :messages
+  mount Rich::Engine => '/rich', :as => 'rich'
   resources :articles
   resources :contents
   resources :groups
   resources :products
-  resources :sliders
   resources :sliders
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :abouts
